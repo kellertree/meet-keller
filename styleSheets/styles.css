@@ -1,75 +1,76 @@
+/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f6f3e8; /* Light beige background */
 }
 
 header {
-    background-color: #333;
+    background: #8B4513; /* SaddleBrown */
     color: white;
     padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+h1 {
+    margin: 0; /* Remove margin to avoid overlap */
+    font-size: 2.5em; /* Increase font size */
 }
 
-header p {
-    margin: 5px 0;
-    font-size: 1.2em;
+p {
+    margin: 5px 0; /* Add margin for spacing */
+    font-size: 1.2em; /* Adjust size for better readability */
 }
 
 nav {
+    margin: 20px 0;
     text-align: center;
-    margin-top: 20px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #333;
     margin: 0 15px;
-    font-size: 18px;
+    text-decoration: none;
+    color: #D2691E; /* Chocolate */
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #007acc;
+    color: #FF4500; /* OrangeRed */
 }
 
 section {
-    margin: 40px;
+    margin: 20px;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #FFF8DC; /* Cornsilk */
+    border: 2px solid #D2691E; /* Chocolate */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-section h2 {
-    font-size: 2em;
-    color: #333;
-}
-
-section p, ul {
-    font-size: 1.2em;
-    color: #555;
-}
-
-ul li {
-    margin-bottom: 10px;
+h2 {
+    color: #A0522D; /* Sienna */
 }
 
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+    background: #8B4513; /* SaddleBrown */
+    color: white;
+    position: relative; /* Changed to relative to avoid footer sticking to bottom */
     width: 100%;
+    bottom: 0;
 }
 
-footer p {
-    margin: 0;
-    font-size: 1em;
+/* Add some autumn leaf decorations using pseudo-elements */
+section::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: url('https://example.com/path/to/autumn-leaves-image.png') no-repeat center center; /* Change this to your image URL */
+    background-size: cover;
 }
+
